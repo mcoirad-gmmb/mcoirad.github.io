@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -219,6 +219,21 @@
 	<div class="section" id="section2">
 		<div class="layer">
 				<h1 style="font-family: 'Comic Sans MS', cursive, sans-serif;font-size:24vh;color:orange;text-align:center;"> photo</h1>
+			</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="layer">
+				<?php
+				  $quotes[] = 'Your first quote';
+				  $quotes[] = 'Your second quote';
+				  $quotes[] = 'etc...';
+
+				  srand ((double) microtime() * 1000000);
+				  $random_number = rand(0,count($quotes)-1);
+
+				  echo ('<h1 style="font-family: "Comic Sans MS", cursive, sans-serif;font-size:24vh;color:orange;text-align:center;">' . ($quotes[$random_number]). '</h1>');
+
+				?>
 			</div>
 	</div>
 </div>
